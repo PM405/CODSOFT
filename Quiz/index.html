@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Web Development Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="quiz-container" aria-live="polite">
+        <h1>Random Quiz - Choose Subject</h1>
+
+        <div id="category-selection">
+            <label for="category-select" class="category-label">Select a Subject:</label>
+            <select id="category-select" aria-label="Select quiz category">
+                <option value="">-- Choose a category --</option>
+                <option value="9">General Knowledge</option>
+                <option value="17">Science & Nature</option>
+                <option value="18">Computer Science</option>
+                <option value="21">Sports</option>
+                <option value="23">History</option>
+                <option value="22">Geography</option>
+                
+            </select>
+            <button id="start-btn" disabled>Start Quiz</button>
+        </div>
+
+        <div id="loading" class="loader" aria-label="Loading quiz questions" style="display:none;"></div>
+
+        <div id="quiz-content" style="display:none;">
+            <div id="question-number"></div>
+            <div id="question"></div>
+            <ul class="answers" role="list"></ul>
+            <button id="next-btn" disabled>Next</button>
+            <div id="score-container" style="display:none;"></div>
+            <button id="reload-btn" style="display:none;">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+
+</html>
