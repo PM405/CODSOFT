@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header><h2>Job Board Website</h2></header>
+
+    <div class="container">
+
+        <div class="form">
+            <h3>Post a Job</h3>
+            <input id="title" placeholder="Job Title">
+            <input id="company" placeholder="Company">
+            <input id="location" placeholder="Location">
+            <button onclick="postJob()">Post</button>
+        </div>
+
+        <div class="jobs">
+            <h3>Available Jobs</h3>
+            <ul id="jobList"></ul>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
